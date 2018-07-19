@@ -1,0 +1,109 @@
+.footer {
+  // position: fixed;
+  bottom: 0; left: 0;
+  width: 100%;
+  height: auto; 
+  overflow: hidden;
+  z-index: 1; 
+
+  @media (max-width: 768px) {
+   position: relative!important;
+  }
+
+  .jbg {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    z-index: 10;
+    @media (max-width: 768px) {
+      bottom: -10px;
+    }
+    svg {
+      height: 80px;
+      width: 80px;
+
+      @media (max-width: 768px) {
+        height: 55px!important;
+        width: 55px!important;
+        padding-bottom: 5px;
+      }
+    }
+
+ 
+  }
+  .address {
+    width: 100%;
+    text-align: center;
+      // font-family: 'Gotham Light';
+    font-family: 'Revista Black';
+    font-size: 12px!important; 
+    padding: 20px;
+    margin-bottom: -20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    position: relative;
+
+    @media (max-width: 768px) {
+      font-size: 10px!important; 
+    }
+
+    .logos {
+      position: absolute;
+      display: flex;
+      right: 10px;
+      bottom: 10px;
+      padding-top: 10px;
+
+      @media (max-width: 768px) {
+        padding: 0!important;
+        bottom: 25px!important;
+      }
+  
+      .privacy {
+        width: max-content;
+        position: relative;
+        left: -5px;
+        line-height: 5;
+        font-family: 'Revista Black';
+        font-size: 12px!important; 
+
+        @media (max-width: 768px) {
+          font-size: 10px!important; 
+        }
+      }
+  
+      svg {
+        height: 45px;
+        width: 45px;
+        margin: auto;
+        display: block;
+      }
+      #ADA {
+        height: 20px;
+        width: 20px;
+        transform: scale(1.5);
+      }
+   #EH  {
+    transform: scale(.8);
+     height: 20px;
+        width: 20px;
+      }
+    }
+
+  }
+  .copyright {
+    font-family: 'Gotham Light';
+    padding-top: 5px;
+    font-size: 10px; 
+  
+    @media (max-width: 480px) {
+    font-size: 8px !important;
+    }
+  
+    
+  }
+}
+.vertical {
+	transform: rotate(-90deg);
+	transform-origin: left top 0;
+}

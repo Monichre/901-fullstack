@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('/fonts/Gotham-Bold.otf');
+  }
+  @font-face {
+    font-family: 'Gotham Light';
+    src: url('/fonts/Gotham-Light.otf');
+  }
+  @font-face {
+    font-family: 'Revista Black';
+    src: url('/fonts/Revista-Black.otf');
+  }
+  @font-face {
+    font-family: 'Revista Stencil Black';
+    src: url('/fonts/RevistaStencil-Black.otf');
+  }
+
+body {
+    font-family: 'Gotham Light';
+
+    h1 {
+        font-family: 'Revista Black';
+    }
+    h2, h3 {
+        font-family: 'Gotham Bold';
+    }
+}
+

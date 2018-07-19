@@ -1,0 +1,114 @@
+.Modal {
+  width: 50%;
+  height: 50%;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  @media (max-width: 768px) {
+    width: 100%;
+    position: fixed;
+    left: 0
+  }
+  @media (max-width: 480px) {
+  
+  }
+  .social {
+    position: absolute;
+    left: 0;
+    height: 100%;
+  }
+
+  .form_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      font-family: 'Gotham Light';
+      text-align: center;
+      margin: 30px auto;
+      @media (max-width: 480px) {
+        margin-bottom: 10px;
+        font-size: 13px;
+      }
+    }
+    @media (max-width: 480px) {
+      padding: 0 30px 30px;
+      margin: 0;
+    }
+
+    #form {
+      width: 500px;
+      display: block;
+      margin: auto;
+      z-index: 3000;
+      font-family: 'Gotham Light';
+      font-size: 14px;
+      @media (max-width: 480px) {
+        width: 90%;
+      }
+    
+      input {
+        padding: 15px;
+        font-family: 'Gotham Light';
+        width: 100%;
+        display: block;
+        margin: 20px;
+        background: transparent;
+        outline: none !important;
+        font-size: 14px;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: solid 1px #000;
+
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+
+        @media (max-width: 480px) {
+          margin: 10px 0;
+          font-size: 12px;
+        }
+      }
+
+      button {
+        padding: 30px !important;
+        display: block;
+        margin: 40px 20px 20px;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        font-size: 14px;
+        background: transparent;
+        position: relative;
+        font-weight: bold;
+        color: white;
+        
+       
+        overflow: visible;
+        img {
+          position: absolute;
+          top: -5px;
+          left: -5px;
+          height: 120%;
+          width: 120%;
+          z-index: -1;
+        }
+
+        @media (max-width: 480px) {
+          padding: 10px!important;
+        }
+      }
+    }
+  }
+}
+
+#rendering {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}

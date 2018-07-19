@@ -1,0 +1,52 @@
+.status {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .inner {
+    background-image: url(/rendering.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 60vw;
+    height: 35vw;
+    display: block;
+    margin: auto;
+    padding: 40px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    @media (max-width: 480px) {
+      width: 80vw;
+      height: 60vh;
+    }
+
+   
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,0.3);
+    }
+    .thanks {
+      // position: absolute;
+      // bottom: -80px;
+      margin-top: 100px;
+      position: relative;
+      z-index: 10;
+      line-height: 2;
+      color: white;
+      text-align: center;
+      font-family: 'Gotham Light';
+      width: 100%;
+      @media (max-width: 480px) {
+        margin-top: 0;
+      }
+    }
+  }
+}

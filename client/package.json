@@ -1,0 +1,23 @@
+{
+  "name": "901-cross-browser",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "custom-react-scripts": "0.2.2",
+    "lodash": "^4.17.10",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-responsive-carousel": "^3.1.41",
+    "react-router-dom": "^4.3.1",
+    "react-spring": "^5.3.18",
+    "react-swipeable": "^4.3.0",
+    "react-waypoint": "^8.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && netlifyctl deploy -b build"
+  }
+}
